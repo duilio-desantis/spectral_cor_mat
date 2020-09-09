@@ -1,8 +1,8 @@
 # Community detection for correlation matrices (spectral method)
 
 Python implementation of the modified spectral method for community detection in 
-correlation matrices (---> spec.py). In order to resolve subcommunities within communities 
-the community detection algorithm can be recursively applied (---> multi.py), as proposed in the reference 
+correlation matrices (-> spec.py). In order to resolve subcommunities within communities 
+the community detection algorithm can be recursively applied (-> multi.py), as proposed in the reference 
 paper.
 
 ## References
@@ -13,8 +13,8 @@ paper.
 ## Notes
 
 Input files for spec.py and multi.py:  
---- Each column should correspond to a time series  
---- The header should contain the names of the vertices (time series)  
+-- Each column should correspond to a time series  
+-- The header should contain the names of the vertices (time series)  
 
 The file 'nyse_300.csv', which contains the temporal sequences of 300 stocks, can be taken as an example.
 In order to analyze this data set, one should simply call the function 'partition' in spec.py (or 'multiresolution_detect' in multi.py), 
