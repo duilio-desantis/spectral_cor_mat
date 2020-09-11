@@ -325,7 +325,7 @@ def get_modularity_matrix(comm_verts, B):
 
     Returns
     -------
-    np.matrix
+    C_A: np.matrix
         The modularity of 'comm_verts' within 'data'
     '''
     
@@ -347,7 +347,7 @@ def get_delta_Q(C_A, s):
 
     Returns
     -------
-    float
+    delta_Q: float
         The corresponding modularity change
     '''
     
@@ -373,7 +373,7 @@ def get_modularity(B, comm_dict, n_verts):
 
     Returns
     -------
-    float
+    Q: float
         The modularity of 'data' given 'comm_dict'
     '''
     
