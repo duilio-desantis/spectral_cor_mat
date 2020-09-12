@@ -45,13 +45,13 @@ def multiresolution_detect(filename, dlm, l):
     names_list = firstline.split(dlm)
     f.close()
     
-    # Number of indivisible set of vertices
+    # Number of indivisible sets of vertices
     nondiv_count = 0
     # Labels the first level
     lvl = 1
     # This dict stores the membership of each vertex at a given level
     lvl_comm_dict = {}
-    # This dict stores the indivisible set of vertices
+    # This dict stores the indivisible sets of vertices
     next_lvl_nondiv = {}
     # Sets up the first iteration
     lvl_data = deque([data])
@@ -171,7 +171,7 @@ def partition(data_set, l, names_set, index_set):
         g1_verts, comm_verts = divide(comm_dict, comm_index, B, N_set, C_norm)
     
         if g1_verts is None:
-            # Indivisible, go to the next one
+            # Indivisible, goes to the next one
             continue
         
         # If divisibile, obtains the other group g2

@@ -77,7 +77,7 @@ def partition(filename, dlm, l):
         g1_verts, comm_verts = divide(comm_dict, comm_index, B)
         
         if g1_verts is None:
-            # Indivisible, go to the next one
+            # Indivisible, goes to the next one
             continue
         
         # If divisibile, obtains the other group g2
